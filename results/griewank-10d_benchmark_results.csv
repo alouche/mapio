@@ -1,0 +1,5 @@
+Function,Algorithm,Best Value,Dimension,Modes Found
+griewank,mapio,1.8064660878280847e-11,10,8
+griewank,cmaes,0.044260829399435986,10,1
+griewank,differential_evolution,0.4726729149252088,10,1
+griewank,dual_annealing,0.08126051363184439,10,1

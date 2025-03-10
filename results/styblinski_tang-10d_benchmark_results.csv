@@ -1,0 +1,5 @@
+Function,Algorithm,Best Value,Dimension,Modes Found
+styblinski_tang,mapio,-349.2514998922451,10,13
+styblinski_tang,cmaes,-264.4307791336335,10,1
+styblinski_tang,differential_evolution,-390.4208938436932,10,1
+styblinski_tang,dual_annealing,-391.66165703771196,10,1

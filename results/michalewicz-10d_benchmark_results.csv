@@ -1,0 +1,5 @@
+Function,Algorithm,Best Value,Dimension,Modes Found
+michalewicz,mapio,-8.08714040536598,10,85
+michalewicz,cmaes,-5.917476895855821,10,1
+michalewicz,differential_evolution,-9.056215360294116,10,1
+michalewicz,dual_annealing,-9.618388899814958,10,1

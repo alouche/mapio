@@ -1,0 +1,5 @@
+Function,Algorithm,Best Value,Dimension,Modes Found
+schwefel,mapio,1600.9927108650045,5,16
+schwefel,cmaes,751.6380572381013,5,1
+schwefel,differential_evolution,237.64776685489596,5,1
+schwefel,dual_annealing,6.363934062392218e-05,5,1

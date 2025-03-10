@@ -1,0 +1,5 @@
+Function,Algorithm,Best Value,Dimension,Modes Found
+ackley,mapio,1.9536259276975443e-08,10,56
+ackley,cmaes,0.026002413672256086,10,1
+ackley,differential_evolution,0.0045128841160537725,10,1
+ackley,dual_annealing,2.814349980774733,10,1

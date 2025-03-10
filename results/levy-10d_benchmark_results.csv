@@ -1,0 +1,5 @@
+Function,Algorithm,Best Value,Dimension,Modes Found
+levy,mapio,4.474981265421523e-12,10,55
+levy,cmaes,0.0008842650428143684,10,1
+levy,differential_evolution,6.792001360807567e-08,10,1
+levy,dual_annealing,2.0973287999703027e-12,10,1

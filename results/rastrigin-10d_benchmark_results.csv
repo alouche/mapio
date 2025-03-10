@@ -1,0 +1,5 @@
+Function,Algorithm,Best Value,Dimension,Modes Found
+rastrigin,mapio,3.1107560971577186e-10,10,80
+rastrigin,cmaes,15.227775484159778,10,1
+rastrigin,differential_evolution,32.09294559128875,10,1
+rastrigin,dual_annealing,0.9949590570933253,10,1

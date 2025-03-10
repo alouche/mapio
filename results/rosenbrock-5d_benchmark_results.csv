@@ -1,0 +1,5 @@
+Function,Algorithm,Best Value,Dimension,Modes Found
+rosenbrock,mapio,1.9530865850796303e-11,5,43
+rosenbrock,cmaes,0.3628415891668314,5,1
+rosenbrock,differential_evolution,0.00032895144663377913,5,1
+rosenbrock,dual_annealing,2.841964108659252e-11,5,1
