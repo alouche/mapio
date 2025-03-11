@@ -23,12 +23,12 @@ The algorithm generates `M` parallel stochastic paths through the search space, 
 
 **b) Weighted Interference**
 
-According to Feynman, Path contributions are weighted by ![exp(iS/ℏ)](https://latex.codecogs.com/png.latex?\fg{FFFFFF}exp(iS/\hbar)), where \( S \) = action.
+According to Feynman, Path contributions are weighted by ![exp(iS/ℏ)](https://latex.codecogs.com/png.latex?\bg{FFFFFF}\fg{000000}exp(iS/\hbar)), where \( S \) = action.
 
-In MAPIO, Paths are weighted by ![exp(-f(x)/τ)](https://latex.codecogs.com/png.latex?\fg{FFFFFF}exp(-f(x)/\tau)), where:
+In MAPIO, Paths are weighted by ![exp(-f(x)/τ)](https://latex.codecogs.com/png.latex?\bg{FFFFFF}\fg{000000}exp(-f(x)/\tau)), where:
 
-- ![f(x)](https://latex.codecogs.com/png.latex?\fg{FFFFFF}f(x)) = objective function (analogous to action S)  
-- ![τ](https://latex.codecogs.com/png.latex?\fg{FFFFFF}\tau) = temperature (inverse analog of Planck’s constant ℏ)
+- ![f(x)](https://latex.codecogs.com/png.latex?\bg{FFFFFF}\fg{000000}f(x)) = objective function (analogous to action S)  
+- ![τ](https://latex.codecogs.com/png.latex?\bg{FFFFFF}\fg{000000}\tau) = temperature (inverse analog of Planck’s constant ℏ)
 
 
 ```python
@@ -38,11 +38,11 @@ In MAPIO, Paths are weighted by ![exp(-f(x)/τ)](https://latex.codecogs.com/png.
 
 **c) Emergent Classical Behavior**
 
-Mimicking the correspondence principle, where classical paths dominate as ![ℏ → 0](https://latex.codecogs.com/png.latex?\fg{FFFFFF}\hbar%20\to%200).  
+Mimicking the correspondence principle, where classical paths dominate as ![ℏ → 0](https://latex.codecogs.com/png.latex?\bg{FFFFFF}\fg{000000}\hbar%20\to%200).  
 
-In MAPIO, as ![τ → 0](https://latex.codecogs.com/png.latex?\fg{FFFFFF}\tau%20\to%200), the algorithm converges to low-energy (high-performance) states, mimicking the emergence of classical trajectories:
+In MAPIO, as ![τ → 0](https://latex.codecogs.com/png.latex?\bg{FFFFFF}\fg{000000}\tau%20\to%200), the algorithm converges to low-energy (high-performance) states, mimicking the emergence of classical trajectories:
 
-![Limit equation](https://latex.codecogs.com/png.latex?\fg{FFFFFF}\lim_{\tau%20\to%200}%20w_i%20\propto%20\exp(-f(x_i)/\tau)%20\rightarrow%20\delta(x_i%20-%20x_{optimal}))
+![Limit equation](https://latex.codecogs.com/png.latex?\bg{FFFFFF}\fg{000000}\lim_{\tau%20\to%200}%20w_i%20\propto%20\exp(-f(x_i)/\tau)%20\rightarrow%20\delta(x_i%20-%20x_{optimal}))
 
 ## 2. Connection to Light Multipath Optimization
 
@@ -52,8 +52,8 @@ Light naturally solves optimization problems by exploring all paths simultaneous
 
 While Photons split at interfaces, exploring multiple paths. MAPIO birfucate paths via:
 
-- Momentum-driven exploration (![αv_i](https://latex.codecogs.com/png.latex?\fg{FFFFFF}\alpha%20v_i))  
-- Stochastic perturbations (![βε_i](https://latex.codecogs.com/png.latex?\fg{FFFFFF}\beta%20\varepsilon_i))
+- Momentum-driven exploration (![αv_i](https://latex.codecogs.com/png.latex?\bg{FFFFFF}\fg{000000}\alpha%20v_i))  
+- Stochastic perturbations (![βε_i](https://latex.codecogs.com/png.latex?\bg{FFFFFF}\fg{000000}\beta%20\varepsilon_i))
 
 
 ```python
@@ -65,10 +65,10 @@ x_i^{k+1} = x_i^k + αv_i^k + βε_i^k  # Momentum + Noise
 
 The paths that light explore constructively interfere along optimal routes. MAPIO models the degree of interference as a blended weight to balance exploitation and exploration in the search space.
 
-- Exploitation: (![ (1-\lambda)\exp(-f/\tau) ](https://latex.codecogs.com/png.latex?\fg{FFFFFF}(1-\lambda)\exp(-f/\tau)) (reinforce good paths)  
-- Exploration: (![ \lambda\cdot distance\cdot diversity ](https://latex.codecogs.com/png.latex?\fg{FFFFFF}\lambda\cdot%20distance\cdot%20diversity)) (reward novel regions)  
+- Exploitation: (![ (1-\lambda)\exp(-f/\tau) ](https://latex.codecogs.com/png.latex?\bg{FFFFFF}\fg{000000}(1-\lambda)\exp(-f/\tau)) (reinforce good paths)  
+- Exploration: (![ \lambda\cdot distance\cdot diversity ](https://latex.codecogs.com/png.latex?\bg{FFFFFF}\fg{000000}\lambda\cdot%20distance\cdot%20diversity)) (reward novel regions)  
 
-![ w_i = \underbrace{(1-\lambda)w_i^{performance}}_{\text{Constructive Interference}} + \underbrace{\lambda w_i^{information}}_{\text{Destructive Interference}} ](https://latex.codecogs.com/png.latex?\fg{FFFFFF}w_i%20=%20\underbrace{(1-\lambda)w_i^{performance}}_{\text{Constructive%20Interference}}%20+%20\underbrace{\lambda%20w_i^{information}}_{\text{Destructive%20Interference}})
+![ w_i = \underbrace{(1-\lambda)w_i^{performance}}_{\text{Constructive Interference}} + \underbrace{\lambda w_i^{information}}_{\text{Destructive Interference}} ](https://latex.codecogs.com/png.latex?\bg{FFFFFF}\fg{000000}w_i%20=%20\underbrace{(1-\lambda)w_i^{performance}}_{\text{Constructive%20Interference}}%20+%20\underbrace{\lambda%20w_i^{information}}_{\text{Destructive%20Interference}})
 
 
 **c) Adaptive Refocusing**
@@ -83,7 +83,7 @@ In summary:
 
 | Concept               | Mathematical Representation                                                                                                             | Physical Analogy              |
 |-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|
-| Path Position        | ![\mathbf{x}_i^{(k)} \in \mathbb{R}^d](https://latex.codecogs.com/png.latex?\fg{FFFFFF}\mathbf{x}_i^{(k)}%20\in%20\mathbb{R}^d)         | Quantum particle trajectory   |
-| Path Velocity        | ![\mathbf{v}_i^{(k)} = \beta \mathbf{v}_i^{(k-1)} + (1 - \beta) \boldsymbol{\epsilon}_i^{(k)}](https://latex.codecogs.com/png.latex?\fg{FFFFFF}\mathbf{v}_i^{(k)}%20=%20\beta%20\mathbf{v}_i^{(k-1)}%20+%20(1%20-%20\beta)%20\boldsymbol{\epsilon}_i^{(k)}) | Momentum in field             |
-| Temperature Schedule | ![\tau(t) = \frac{\tau_0}{\sqrt{1 + t/T_0}} \cdot \left(1 + A \sin(2\pi t / T_1)\right)](https://latex.codecogs.com/png.latex?\fg{FFFFFF}\tau(t)%20=%20\frac{\tau_0}{\sqrt{1%20+%20t/T_0}}%20\cdot%20\left(1%20+%20A%20\sin(2\pi%20t%20/%20T_1)\right)) | Thermal annealing             |
-| Mode Density         | ![\rho_j = \frac{1}{\pi r^2} \sum_{k=1}^{M} e^{-\|\mathbf{x}_k - \mathbf{m}_j\|^2 / 2r^2}](https://latex.codecogs.com/png.latex?\fg{FFFFFF}\rho_j%20=%20\frac{1}{\pi%20r^2}%20\sum_{k=1}^{M}%20e^{-\|\mathbf{x}_k%20-%20\mathbf{m}_j\|^2%20/%202r^2}) | Photon concentration          |
+| Path Position        | ![\mathbf{x}_i^{(k)} \in \mathbb{R}^d](https://latex.codecogs.com/png.latex?\bg{FFFFFF}\fg{000000}\mathbf{x}_i^{(k)}%20\in%20\mathbb{R}^d)         | Quantum particle trajectory   |
+| Path Velocity        | ![\mathbf{v}_i^{(k)} = \beta \mathbf{v}_i^{(k-1)} + (1 - \beta) \boldsymbol{\epsilon}_i^{(k)}](https://latex.codecogs.com/png.latex?\bg{FFFFFF}\fg{000000}\mathbf{v}_i^{(k)}%20=%20\beta%20\mathbf{v}_i^{(k-1)}%20+%20(1%20-%20\beta)%20\boldsymbol{\epsilon}_i^{(k)}) | Momentum in field             |
+| Temperature Schedule | ![\tau(t) = \frac{\tau_0}{\sqrt{1 + t/T_0}} \cdot \left(1 + A \sin(2\pi t / T_1)\right)](https://latex.codecogs.com/png.latex?\bg{FFFFFF}\fg{000000}\tau(t)%20=%20\frac{\tau_0}{\sqrt{1%20+%20t/T_0}}%20\cdot%20\left(1%20+%20A%20\sin(2\pi%20t%20/%20T_1)\right)) | Thermal annealing             |
+| Mode Density         | ![\rho_j = \frac{1}{\pi r^2} \sum_{k=1}^{M} e^{-\|\mathbf{x}_k - \mathbf{m}_j\|^2 / 2r^2}](https://latex.codecogs.com/png.latex?\bg{FFFFFF}\fg{000000}\rho_j%20=%20\frac{1}{\pi%20r^2}%20\sum_{k=1}^{M}%20e^{-\|\mathbf{x}_k%20-%20\mathbf{m}_j\|^2%20/%202r^2}) | Photon concentration          |

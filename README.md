@@ -15,10 +15,10 @@ To learn more on how the algorithm came to be, click on [Inspiration from Physic
 
 | Concept               | Mathematical Representation                                                                                                             | Physical Analogy              |
 |-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|
-| Path Position        | ![\mathbf{x}_i^{(k)} \in \mathbb{R}^d](https://latex.codecogs.com/png.latex?\fg{FFFFFF}\mathbf{x}_i^{(k)}%20\in%20\mathbb{R}^d)         | Quantum particle trajectory   |
-| Path Velocity        | ![\mathbf{v}_i^{(k)} = \beta \mathbf{v}_i^{(k-1)} + (1 - \beta) \boldsymbol{\epsilon}_i^{(k)}](https://latex.codecogs.com/png.latex?\fg{FFFFFF}\mathbf{v}_i^{(k)}%20=%20\beta%20\mathbf{v}_i^{(k-1)}%20+%20(1%20-%20\beta)%20\boldsymbol{\epsilon}_i^{(k)}) | Momentum in field             |
-| Temperature Schedule | ![\tau(t) = \frac{\tau_0}{\sqrt{1 + t/T_0}} \cdot \left(1 + A \sin(2\pi t / T_1)\right)](https://latex.codecogs.com/png.latex?\fg{FFFFFF}\tau(t)%20=%20\frac{\tau_0}{\sqrt{1%20+%20t/T_0}}%20\cdot%20\left(1%20+%20A%20\sin(2\pi%20t%20/%20T_1)\right)) | Thermal annealing             |
-| Mode Density         | ![\rho_j = \frac{1}{\pi r^2} \sum_{k=1}^{M} e^{-\|\mathbf{x}_k - \mathbf{m}_j\|^2 / 2r^2}](https://latex.codecogs.com/png.latex?\fg{FFFFFF}\rho_j%20=%20\frac{1}{\pi%20r^2}%20\sum_{k=1}^{M}%20e^{-\|\mathbf{x}_k%20-%20\mathbf{m}_j\|^2%20/%202r^2}) | Photon concentration          |
+| Path Position        | ![\mathbf{x}_i^{(k)} \in \mathbb{R}^d](https://latex.codecogs.com/png.latex?\bg{FFFFFF}\fg{000000}\mathbf{x}_i^{(k)}%20\in%20\mathbb{R}^d)         | Quantum particle trajectory   |
+| Path Velocity        | ![\mathbf{v}_i^{(k)} = \beta \mathbf{v}_i^{(k-1)} + (1 - \beta) \boldsymbol{\epsilon}_i^{(k)}](https://latex.codecogs.com/png.latex?\bg{FFFFFF}\fg{000000}\mathbf{v}_i^{(k)}%20=%20\beta%20\mathbf{v}_i^{(k-1)}%20+%20(1%20-%20\beta)%20\boldsymbol{\epsilon}_i^{(k)}) | Momentum in field             |
+| Temperature Schedule | ![\tau(t) = \frac{\tau_0}{\sqrt{1 + t/T_0}} \cdot \left(1 + A \sin(2\pi t / T_1)\right)](https://latex.codecogs.com/png.latex?\bg{FFFFFF}\fg{000000}\tau(t)%20=%20\frac{\tau_0}{\sqrt{1%20+%20t/T_0}}%20\cdot%20\left(1%20+%20A%20\sin(2\pi%20t%20/%20T_1)\right)) | Thermal annealing             |
+| Mode Density         | ![\rho_j = \frac{1}{\pi r^2} \sum_{k=1}^{M} e^{-\|\mathbf{x}_k - \mathbf{m}_j\|^2 / 2r^2}](https://latex.codecogs.com/png.latex?\bg{FFFFFF}\fg{000000}\rho_j%20=%20\frac{1}{\pi%20r^2}%20\sum_{k=1}^{M}%20e^{-\|\mathbf{x}_k%20-%20\mathbf{m}_j\|^2%20/%202r^2}) | Photon concentration          |
 
 For the extensive mathematical formulations click here [Mathematical Foundation](docs/mathematical_foundation.md).
 
@@ -31,11 +31,11 @@ The strength of MAPIO lies in simultaneous global exploration and gradient-aware
 The empirical advantages of MAPI over current state-of-the-art algorithms are:
 
 1. **Mode Discovery Rate**: 
-![O(M^{2/3})](https://latex.codecogs.com/png.latex?\fg{FFFFFF}O(M^{2/3})) vs ![O(M^{1/2})](https://latex.codecogs.com/png.latex?\fg{FFFFFF}O(M^{1/2})) in standard GA
+![O(M^{2/3})](https://latex.codecogs.com/png.latex?\bg{FFFFFF}\fg{000000}O(M^{2/3})) vs ![O(M^{1/2})](https://latex.codecogs.com/png.latex?\bg{FFFFFF}\fg{000000}O(M^{1/2})) in standard GA
 
 2. **Convergence Speed**: 38% faster on Rastrigin vs. CMA-ES (d=10)
 
-3. **Parameter Sensitivity**:  Normalized sensitivity  ![S_p = \frac{\partial \mathcal{V}}{\partial p} \cdot \frac{p}{\mathcal{V}} < 0.2](https://latex.codecogs.com/png.latex?\fg{FFFFFF}S_p%20=%20\frac{\partial%20\mathcal{V}}{\partial%20p}%20\cdot%20\frac{p}{\mathcal{V}}%20<%200.2) for all parameters.
+3. **Parameter Sensitivity**:  Normalized sensitivity  ![S_p = \frac{\partial \mathcal{V}}{\partial p} \cdot \frac{p}{\mathcal{V}} < 0.2](https://latex.codecogs.com/png.latex?\bg{FFFFFF}\fg{000000}S_p%20=%20\frac{\partial%20\mathcal{V}}{\partial%20p}%20\cdot%20\frac{p}{\mathcal{V}}%20<%200.2) for all parameters.
 
 4. **High Parallelism**: MAPIO's algorithm allows it to simultaneously explore multiple regions, making it particularly well-suited for distributed computing environments.
 
